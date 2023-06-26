@@ -1,4 +1,5 @@
 ---
+import Os from "../layouts/os.astro"
 ---
 
 <main class="flex justify-center items-center w-screen h-screen shadow-2xl shadow-[#252525]" id="msg">
@@ -24,11 +25,12 @@
             </p>
         </div>
         <div class="flex justify-center w-full">
-            <div onclick="document.getElementById('msg').style.display = 'none'; " class="border border-white rounded-full p-2 px-8 hover:cursor-pointer">
+            <div onclick="document.getElementById('msg').style.display = 'none';" class="border border-white rounded-full p-2 px-8 hover:cursor-pointer">
                 CLOSE
             </div>
         </div>
     </div>
 </div>
-
 </main>
+
+
