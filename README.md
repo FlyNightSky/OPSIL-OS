@@ -30,6 +30,11 @@ Contributions are always welcome!
 - Proxy services
 - Working web proxys
 
+# Disclamiers
+
+This is the First version of OPSIL OS. THIS OS IS NOT PERFECT
+
+
 
 
 
