@@ -4,7 +4,7 @@
 <main class="w-screen h-screen z-0">
   <div
     class="flex justify-center items-center absolute w-full h-full text-9xl text-[#ADADAD] opacity-30"
-    style="font-family:League Spartan;    ;"
+    style="font-family:League Spartan;"
   >
     OPSIL OS V1
   </div>
@@ -26,12 +26,9 @@
 
       <div
         id="grid"
-        class="grid grid-cols-4 px-2 pt-5 gap-2 w-full select-none hover:cursor-move"
+        class="grid grid-cols-4 px-2 pt-5 gap-2 w-full select-none z-40"
       >
-        <div
-          id="element"
-          class="rounded-lg bg-[#252525] p-3 absolute hover:cursor-move"
-        >
+        <div id="element" class="rounded-lg bg-[#252525] p-3 absolute z-10">
           <a
             ><img
               src="https://cognet.vercel.app/logo.png"
@@ -116,11 +113,11 @@
     >
       <div
         id="menu1"
-        class="w-4/5 h-2/5 z-0 bg-gray-600 opacity-40 rounded-3xl text-white"
+        class="w-4/5 h-2/5 z-0 bg-gray-600 opacity-40 absolute rounded-3xl text-white z-1"
       >
       </div>
 
-      <div class="w-4/5 h-2/5 absolute rounded-3xl text-white" id="menu">
+      <div class="w-4/5 h-2/5 absolute rounded-3xl text-white z-1" id="menu">
         <button
           onclick="document.getElementById('menu').style.display = 'none';document.getElementById('menu1').style.display = 'none';"
           class="border border-white rounded-full z-10 p-1 px-5 mt-5 mx-5 hover:cursor-pointer"
@@ -154,6 +151,8 @@
     event.preventDefault();
     draggableElement.style.left = event.clientX - startX + "px";
     draggableElement.style.top = event.clientY - startY + "px";
+    dragElement.style.opacity = "0.9";
+    dragElement.style.filter = "alpha(opacity=90)";
   }
 
   // Function to handle the end of dragging
